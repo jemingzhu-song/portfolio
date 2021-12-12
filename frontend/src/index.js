@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { TerminalContextProvider } from 'react-terminal';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TerminalContextProvider>
+      <App />
+    </TerminalContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

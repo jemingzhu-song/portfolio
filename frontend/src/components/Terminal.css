@@ -1,0 +1,9 @@
+.Terminal {
+  display: flex;
+  justify-content: center;
+}
+
+.Terminal-terminal {
+  width: 900px;
+  height: 500px;
+}
