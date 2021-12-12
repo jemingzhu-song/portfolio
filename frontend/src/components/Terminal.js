@@ -17,10 +17,10 @@ function Terminal() {
           commands={commands}
           themes={{
             customTheme: {
-              themeBGColor: '#272B36',
+              themeBGColor: '#313131',
               themeToolbarColor: '#DBDBDB',
               themeColor: '#FFFEFC',
-              themePromptColor: '#416bf7',
+              themePromptColor: '#FFFFF',
             },
           }}
           theme='customTheme'

@@ -6,7 +6,9 @@ import './HomePage.css';
 function HomePage() {
   return (
     <div className='HomePage'>
-      <Terminal />
+      <div className='HomePage-terminal'>
+        <Terminal />
+      </div>
     </div>
   );
 }

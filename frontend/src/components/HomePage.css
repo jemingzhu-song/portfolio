@@ -1,4 +1,7 @@
 .HomePage {
-  background-color: #4e4e4e;
   height: 100vh;
+}
+
+.HomePage-terminal {
+  padding: 64px 0;
 }
