@@ -1,7 +1,67 @@
 .HomePage {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1280px;
+  background-color: var(--primary-color-blue);
+  background-image: url('../images/stars.png');
+}
+
+.HomePage-instructions {
+  text-align: center;
+  color: var(--primary-color-white);
+  font-size: var(--body-font-size);
 }
 
 .HomePage-terminal {
-  padding: 64px 0;
+  padding: 128px 0;
+}
+
+.HomePage-waves {
+  display: flex;
+  flex-direction: column;
+}
+
+.HomePage-wave {
+  position: absolute;
+  margin-top: auto; /* Keep item at the bottom of the page  */
+  width: 100%;
+  height: 120px;
+  background: url('../images/wave.png');
+  bottom: -10px;
+  animation: bob 3s ease-in-out 1s infinite alternate both;
+  overflow: hidden;
+}
+
+.wave1 {
+  z-index: 4;
+  opacity: 1;
+  background-position-x: 400px;
+}
+
+.wave2 {
+  z-index: 3;
+  opacity: 0.9;
+  background-position-x: 300px;
+}
+
+.wave3 {
+  z-index: 2;
+  opacity: 0.8;
+  background-position-x: 200px;
+}
+
+.wave4 {
+  z-index: 1;
+  opacity: 0.7;
+  background-position-x: 100px;
+}
+
+@keyframes bob {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
 }

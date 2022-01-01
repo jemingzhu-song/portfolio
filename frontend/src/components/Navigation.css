@@ -1,4 +1,19 @@
-.Navigation {
+.Navigation-navigation-options {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 16px;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  background-color: var(--primary-color-blue);
+}
+
+.Navigation-navigation-link {
+  color: var(--primary-color-white);
+}
+
+.Navigation-navigation-link:hover {
+  color: var(--secondary-color);
 }

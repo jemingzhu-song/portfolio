@@ -6,7 +6,8 @@ import './Terminal.css';
 function Terminal() {
   // Define commands here
   const commands = {
-    whoami: 'jackharper',
+    help: 'Available Commands: \n ls: View the current directory',
+    whoami: 'jeming zhu-song',
     cd: (directory) => `changed path to ${directory}`,
   };
 
@@ -17,10 +18,10 @@ function Terminal() {
           commands={commands}
           themes={{
             customTheme: {
-              themeBGColor: '#313131',
+              themeBGColor: '#FFF',
               themeToolbarColor: '#DBDBDB',
-              themeColor: '#FFFEFC',
-              themePromptColor: '#FFFFF',
+              themeColor: '#416bf7',
+              themePromptColor: '#416bf7',
             },
           }}
           theme='customTheme'
