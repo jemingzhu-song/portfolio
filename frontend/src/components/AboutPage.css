@@ -1,0 +1,55 @@
+.AboutPage {
+  margin-top: 64px;
+}
+
+.AboutPage-summary {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.AboutPage-summary-text {
+  margin: 16px 32px;
+  min-width: 500px;
+}
+
+.AboutPage-summary-box {
+  margin: 16px 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.AboutPage-summary-box-links {
+  text-align: center;
+}
+
+.AboutPage-social-icon {
+  text-decoration: none;
+  color: var(--primary-color-blue);
+  padding: 0 16px;
+}
+
+.AboutPage-detail {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.AboutPage-detail-photo {
+  margin: 16px 32px;
+  width: 500px;
+}
+
+.AboutPage-detail-personal-photo {
+  border-radius: 20px;
+}
+
+.AboutPage-detail-text {
+  margin: 16px 32px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
