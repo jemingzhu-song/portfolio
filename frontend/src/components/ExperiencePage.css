@@ -1,0 +1,18 @@
+/*==================== EXPERIENCE SECTION ====================*/
+.experience {
+  padding-top: 5vh;
+}
+
+.experience-container {
+  text-align: center;
+  height: 1200px;
+}
+
+.experience-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 64px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 64px;
+}

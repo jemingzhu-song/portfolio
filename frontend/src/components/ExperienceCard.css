@@ -1,0 +1,71 @@
+/*==================== EXPERIENCE CARDS SECTION ====================*/
+.experience-card {
+    width: 360px;
+    height: 480px;
+    border-radius: 32px;
+    padding: 16px 16px 16px;
+    color: var(--text-color-body-white);
+    box-shadow: 0 0 5px 2px var(--secondary-color);
+    background-color: var(--primary-color-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    /* Ensures that when the card and everything on it is flipped, things that
+    were on the front of the card can now go into the back, and things that
+    were on the back of the card can now go to the front */
+    transform-style: preserve-3d;
+    /* Slows down the flip effect so that it can be seen */
+    transition: 250ms;
+    /* perspective(1000px) gives the flip animation a more 3D effect */
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+}
+
+.experience-card:hover {
+    box-shadow: 0 0 5px 2px black;
+    --translate-y: -20px;
+}
+
+.experience-card.flip {
+    background-color: var(--primary-color-white);
+    --rotate-y: 180deg;
+}
+
+/* Animation Tutorial: https://www.youtube.com/watch?v=hEtZ040fsD8 14min onwards */
+.experience-card .front,
+.experience-card .back {
+    position: absolute;
+    /* Anything (any text) that is flipped will be hidden (i.e. so that the text on the 
+    back of the card is hidden until the card is flipped), but when we flip the card
+    anything (any text) that is flipped (after the card is flipped) will also be hidden
+    (i.e. when the card is flipped, the text that was initially at the front that goes to the
+    back will now be hidden) */
+    backface-visibility: hidden;
+}
+
+.experience-card .front {
+    padding: 0 8px 0;
+}
+
+/* Ensures the text on the back of the card flips when the card is flipped */
+.experience-card .back {
+    transform: rotateY(180deg);
+}
+
+.text-company {
+    font-size: 32px;
+    padding-bottom: 8px;
+}
+
+.text-role {
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.text-tenure {
+    font-size: 18px;
+    font-style: italic;
+    padding-bottom: 8px;
+}
