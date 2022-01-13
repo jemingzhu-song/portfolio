@@ -5,7 +5,9 @@ const ExperiencePage = () => {
   return (
     <section class='experience section' id='Experience'>
       <div class='experience-container'>
-        <p>Hover over each card for a surprise!</p>
+        <p style={{ color: 'cornflowerblue' }}>
+          Hover over each card for a surprise!
+        </p>
         <div class='experience-content grid'>
           <ExperienceCard
             company='Macquarie Group'

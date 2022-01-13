@@ -1,0 +1,41 @@
+.TechnologyPage {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TechnologyPage-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* https://stackoverflow.com/questions/12813573/position-icons-into-circle */
+  --d: 7.5em; /* image size */
+  --rel: 1.2; /* how much extra space we want between images, 1 = one image size */
+  --r: calc(0.5 * (1 + var(--rel)) * var(--d) / var(--tan)); /* circle radius */
+  --s: calc(2 * var(--r) + var(--d)); /* container size */
+  position: relative;
+  width: var(--s);
+  height: var(--s);
+}
+
+.TechnologyPage-technology {
+  background-color: cornflowerblue;
+  color: #fff;
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: calc(-0.5 * var(--d));
+  width: var(--d);
+  height: var(--d);
+  --az: calc(var(--i) * 1turn / var(--m));
+  transform: rotate(var(--az)) translate(var(--r)) rotate(calc(-1 * var(--az)));
+}

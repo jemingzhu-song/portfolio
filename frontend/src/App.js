@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react';
 import AboutPage from './components/AboutPage';
 import ExperiencePage from './components/ExperiencePage';
 import TechnologyPage from './components/TechnologyPage';
+import ContactPage from './components/ContactPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/about' exact component={AboutPage} />
           <Route path='/experience' exact component={ExperiencePage} />
           <Route path='/technology' exact component={TechnologyPage} />
+          <Route path='/contact' exact component={ContactPage} />
         </Switch>
       </Router>
     </div>

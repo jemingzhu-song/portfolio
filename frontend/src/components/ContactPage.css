@@ -1,0 +1,67 @@
+.ContactPage {
+  margin-top: 64px;
+}
+
+.ContactPage-personal-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactPage-contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 400px;
+}
+
+.ContactPage-icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.ContactPage-icon {
+  color: var(--primary-color-blue);
+}
+
+.ContactPage-specific-details {
+  padding: 16px 32px;
+}
+
+.ContactPage-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContactPage-form-details {
+  width: 500px;
+}
+
+.ContactPage-input-section {
+  padding: 16px 0;
+}
+
+.ContactPage-input {
+  width: 100%;
+  background-color: #eef2fc;
+  color: var(--secondary-color);
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  border: none;
+  outline: none;
+  margin: 4px 0;
+  padding: 8px 8px 8px 8px;
+  border-radius: 8px;
+  border: 8px;
+}
+
+.ContactPage-button-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

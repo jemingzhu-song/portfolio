@@ -6,10 +6,10 @@
   --header-height: 48px;
 
   /*========== COLORS ==========*/
-  --primary-color-blue: #416bf7;
+  --primary-color-blue: cornflowerblue;
   --primary-color-white: #fff;
   --secondary-color: #595b60;
-  --text-color-heading: #416bf7;
+  --text-color-heading: #cornflowerblue;
   --text-color-body-grey: #595b60;
   --text-color-body-white: #fff;
   --container-color: #fff;
